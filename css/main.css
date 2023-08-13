@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    color: blue;
+    font-size: 6vmin;
+    letter-spacing: 2vmin;
+}
+
+h2 {
+    font-size: 5vmin;
+    color: purple
+}
+
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 10vmin);
+    grid-template-rows: repeat(3, 10vmin);
+    gap: 1vmin;
+    margin-top: -2vmin;
+}
+
+#board>div {
+    border: 0.1vmin solid blueviolet;
+}
+
+button {
+    color: blue;
+    border: 0.1vmin solid lightblue;
+    border-radius: 3vmin;
+    font-size: 4vmin;
+    margin-top: 4vmin;
+}
+
+button:hover {
+    color: white;
+    background-color: darkgrey;
+}
